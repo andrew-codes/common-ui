@@ -1,0 +1,6 @@
+/src
+.editorconfig
+.gitignore
+wallaby.js
+docs
+scripts

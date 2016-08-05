@@ -1,0 +1,16 @@
+# OS related
+.DS_STORE
+Thumbs.db
+
+# IDE
+.idea
+
+# dependencies
+node_modules
+
+# Build output
+/dist
+
+# Misc.
+*.log
+*.orig

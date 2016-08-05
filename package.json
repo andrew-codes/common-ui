@@ -1,0 +1,97 @@
+{
+  "name": "@andrew-codes/common-ui",
+  "version": "1.0.0",
+  "description": "Common UI components",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --ui bdd -r ./specSetup  src/**/*.spec.js --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-codes/common-ui.git"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "react"
+  ],
+  "author": "Andrew Smith <andrew@andrew.codes>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrew-codes/common-ui/issues"
+  },
+  "homepage": "https://github.com/andrew-codes/common-ui#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-3",
+      "stage-2",
+      "stage-1"
+    ]
+  },
+  "eslint": {
+    "env": {
+      "mocha": true,
+      "node": true,
+      "browser": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "babel",
+      "react"
+    ],
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "15.0"
+      }
+    },
+    "globals": {
+      "should": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "strict": 0,
+      "babel/generator-star-spacing": 0,
+      "babel/new-cap": 0,
+      "babel/array-bracket-spacing": 0,
+      "babel/object-curly-spacing": 0,
+      "babel/object-shorthand": 0,
+      "babel/arrow-parens": 0,
+      "babel/no-await-in-loop": 0,
+      "babel/flow-object-type": 0,
+      "babel/func-params-comma-dangle": 0
+    }
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.13.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "babel-preset-stage-3": "^6.11.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.0",
+    "cheerio": "^0.20.0",
+    "cross-env": "^2.0.0",
+    "enzyme": "^2.4.1",
+    "jsdom": "^9.4.1",
+    "mocha": "^3.0.1",
+    "react-addons-test-utils": "^15.3.0"
+  }
+}
